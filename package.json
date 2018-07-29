@@ -1,0 +1,17 @@
+{
+  "name": "nv-films",
+  "version": "1.0.0",
+  "description": "No vacancy films official webpage",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "arts",
+    "films"
+  ],
+  "author": "sjunka",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
