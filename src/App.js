@@ -42,7 +42,7 @@ const Home = () => {
                                 objectFit: "cover",
                                 height: "200px"
                             }}
-                            src="./imgs/novacancy_logo_Negro-01.png"
+                            src="./imgs/novacancy_logo_Negro_solo-01.png"
                             alt="Card cap"
                         />
                     </div>
@@ -181,8 +181,8 @@ class App extends Component {
     render() {
         return (
             <Container>
-                {/* <Intro /> */}
-                {/* <Home /> */}
+                <Intro />
+                <Home />
                 <Knowus />
             </Container>
         );
