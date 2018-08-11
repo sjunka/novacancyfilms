@@ -9,7 +9,14 @@ import {
     CardBody,
     CardTitle,
     CardSubtitle,
-    Button
+    Button,
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink
 } from "reactstrap";
 
 const Intro = () => {
@@ -22,7 +29,7 @@ const Intro = () => {
                             width: "100%",
                             objectFit: "cover"
                         }}
-                        src="./imgs/novacancy_logo_Negro-01.png"
+                        src="./imgs/logo1.png"
                         alt="Card cap"
                     />
                 </div>
@@ -30,6 +37,10 @@ const Intro = () => {
         </Row>
     );
 };
+//
+//
+//
+//
 const Home = () => {
     return (
         <Row>
@@ -42,7 +53,7 @@ const Home = () => {
                                 objectFit: "cover",
                                 height: "200px"
                             }}
-                            src="./imgs/novacancy_logo_Negro_solo-01.png"
+                            src="./imgs/logo2.png"
                             alt="Card cap"
                         />
                     </div>
@@ -76,16 +87,30 @@ const Home = () => {
         </Row>
     );
 };
+//
+//
+//
+//
+//
+//
 
 const Knowus = () => {
     return (
         <Row>
             <Col xs="12">
                 <div className="d-flex justify-content-center">
-                <div className="text-center" style={{width: "100%", minHeight: "100px", marginTop: "50px"}}>
-                <button type="button" class="btn btn-outline-dark">Conocenos</button>
-
-                </div>
+                    <div
+                        className="text-center"
+                        style={{
+                            width: "100%",
+                            minHeight: "100px",
+                            marginTop: "50px"
+                        }}
+                    >
+                        <button type="button" class="btn btn-outline-dark">
+                            Conocenos
+                        </button>
+                    </div>
                 </div>
                 <div className="d-flex flex-column">
                     <h3>Misión</h3>
@@ -113,69 +138,214 @@ const Knowus = () => {
             </Col>
             <Col xs="12">
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-6 pb-4">
                         <img
                             style={{
                                 width: "100%",
                                 objectFit: "cover"
                             }}
-                            src="https://avatars3.githubusercontent.com/u/12448595?s=460&v=4"
+                            src="https://picsum.photos/200/250"
                             alt="Card cap"
                         />
                     </div>
-                    <div className="col-6">
-                        <h6>Sergio Junca</h6>
-                        <p>
+                    <div className="col-6 d-flex flex-column">
+                        <h6>
+                            <strong>José Caceres</strong>
+                        </h6>
+
+                        <p style={{ margin: 0 }}>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Ipsa reiciendis architecto tempora ipsam dolor
                             eveniet corrupti at sit id odio?
                         </p>
+                        <div className="align-self-end">
+                            <div className="iconWrapper">
+                                <i
+                                    className="fab fa-twitter"
+                                    style={{ padding: "1rem" }}
+                                />
+                                <i
+                                    className="fab fa-linkedin"
+                                    style={{ padding: "1rem" }}
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-6">
-                        <h6>Sergio Junca</h6>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Ipsa reiciendis architecto tempora ipsam dolor
-                            eveniet corrupti at sit id odio?
-                        </p>
-                    </div>
-                    <div className="col-6">
+                    <div className="col-6 pb-4">
                         <img
                             style={{
                                 width: "100%",
                                 objectFit: "cover"
                             }}
-                            src="https://avatars3.githubusercontent.com/u/12448595?s=460&v=4"
+                            src="https://picsum.photos/200/250"
                             alt="Card cap"
                         />
+                    </div>
+                    <div className="col-6 d-flex flex-column">
+                        <h6>
+                            <strong>Ernesto Fernandez</strong>
+                        </h6>
+
+                        <p style={{ margin: 0 }}>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ipsa reiciendis architecto tempora ipsam dolor
+                            eveniet corrupti at sit id odio?
+                        </p>
+                        <div className="align-self-end">
+                            <div className="iconWrapper">
+                                <i
+                                    className="fab fa-twitter"
+                                    style={{ padding: "1rem" }}
+                                />
+                                <i
+                                    className="fab fa-linkedin"
+                                    style={{ padding: "1rem" }}
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-6 pb-4">
                         <img
                             style={{
                                 width: "100%",
                                 objectFit: "cover"
                             }}
-                            src="https://avatars3.githubusercontent.com/u/12448595?s=460&v=4"
+                            src="https://picsum.photos/200/250"
                             alt="Card cap"
                         />
                     </div>
-                    <div className="col-6">
-                        <h6>Sergio Junca</h6>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Ipsa reiciendis architecto tempora ipsam dolor
-                            eveniet corrupti at sit id odio?
-                        </p>
+                    <div className="col-6 d-flex flex-column">
+                        <h6>
+                            <strong>Sergio Junca</strong>
+                        </h6>
+
+                        <p style={{ margin: 0 }}>Software Architect</p>
+                        <div className="align-self-end">
+                            <div className="iconWrapper">
+                                <i
+                                    className="fab fa-twitter"
+                                    style={{ padding: "1rem" }}
+                                />
+                                <i
+                                    className="fab fa-linkedin"
+                                    style={{ padding: "1rem" }}
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Col>
         </Row>
     );
 };
+//
+//
+//
+//
+//
+//
+
+class Footer extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.toggleNavbar = this.toggleNavbar.bind(this);
+        this.state = {
+            collapsed: true
+        };
+    }
+
+    toggleNavbar() {
+        this.setState({
+            collapsed: !this.state.collapsed
+        });
+    }
+    render() {
+        return (
+            <Row>
+                <Col xs="12">
+                    <div>
+                        <Navbar color="white" light className="pt-2" fixed="bottom" expand="top">
+                            <NavbarBrand href="/" className="mr-auto">
+                                novacancy films
+                            </NavbarBrand>
+                            <NavbarToggler
+                                onClick={this.toggleNavbar}
+                                className="mr-2"
+                            />
+                            <Collapse isOpen={!this.state.collapsed} navbar>
+                                <Nav navbar>
+                                    <NavItem>
+                                        <NavLink href="#">Clientes</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="#">Servicios</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="#">Portafolio</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="#">Clientes</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="#">Contacto</NavLink>
+                                    </NavItem>
+                                </Nav>
+                            </Collapse>
+                        </Navbar>
+                    </div>
+                </Col>
+            </Row>
+        );
+    }
+}
+//
+//
+//
+//
+//
+//
+//
+const Clients = () => {
+    return (
+        <Row>
+            <Col xs="12">
+                <div className="d-flex justify-content-center">
+                    <div
+                        className="text-center"
+                        style={{
+                            width: "100%",
+                            minHeight: "100px",
+                            marginTop: "50px"
+                        }}
+                    >
+                        <button type="button" class="btn btn-outline-dark">
+                            Conocenos
+                        </button>
+                    </div>
+                </div>
+                <div className="d-flex flex-row">
+                            {/* Crear grilla 2 x 2  */}
+
+                    <div className="hijos"> hijo left </div>
+                    <div className="hijos"> hijo right </div>
+
+                </div>
+            </Col>
+        </Row>
+    );
+};
+//
+//
+//
+//
+//
+//
+
 
 class App extends Component {
     render() {
@@ -184,6 +354,8 @@ class App extends Component {
                 <Intro />
                 <Home />
                 <Knowus />
+                <Clients/>
+                <Footer />
             </Container>
         );
     }
