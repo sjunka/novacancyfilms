@@ -107,7 +107,9 @@ const Knowus = () => {
                             marginTop: "50px"
                         }}
                     >
-                        <button type="button" class="btn btn-outline-dark">
+                        <button style={{
+                            fontSize: "1.25rem",
+                        }} type="button" class="btn btn-outline-dark">
                             Conocenos
                         </button>
                     </div>
@@ -188,6 +190,7 @@ const Knowus = () => {
                             <strong>Ernesto Fernandez</strong>
                         </h6>
 
+                        <p style={{ margin: 0 }}>Creative Designer</p>
                         <p style={{ margin: 0 }}>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Ipsa reiciendis architecto tempora ipsam dolor
@@ -269,7 +272,13 @@ class Footer extends React.Component {
             <Row>
                 <Col xs="12">
                     <div>
-                        <Navbar color="white" light className="pt-2" fixed="bottom" expand="top">
+                        <Navbar
+                            color="white"
+                            light
+                            className="pt-2"
+                            fixed="bottom"
+                            expand="top"
+                        >
                             <NavbarBrand href="/" className="mr-auto">
                                 novacancy films
                             </NavbarBrand>
@@ -312,31 +321,153 @@ class Footer extends React.Component {
 //
 const Clients = () => {
     return (
-        <Row>
-            <Col xs="12">
-                <div className="d-flex justify-content-center">
-                    <div
-                        className="text-center"
-                        style={{
-                            width: "100%",
-                            minHeight: "100px",
-                            marginTop: "50px"
-                        }}
-                    >
-                        <button type="button" class="btn btn-outline-dark">
-                            Conocenos
-                        </button>
+        <div>
+            <Row>
+                <Col xs="12">
+                    <div className="d-flex justify-content-center">
+                        <div
+                            className="text-center"
+                            style={{
+                                width: "100%",
+                                minHeight: "100px",
+                                marginTop: "50px"
+                            }}
+                        >
+                            <button style={{
+                                fontSize: "1.25rem"
+                            }} type="button" class="btn btn-outline-dark">
+                                Clientes
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div className="d-flex flex-row">
-                            {/* Crear grilla 2 x 2  */}
-
-                    <div className="hijos"> hijo left </div>
-                    <div className="hijos"> hijo right </div>
-
-                </div>
-            </Col>
-        </Row>
+                </Col>
+            </Row>
+            <Row>
+                <Col xs="6">
+                    <div className="d-flex justify-content-center pb-2">
+                        <div className="text-center">
+                            <Card>
+                                <CardImg
+                                style={{
+                                    objectFit:"cover"
+                                }}
+                                    top
+                                    width="100%"
+                                    src="https://picsum.photos/318/180"
+                                    alt="Card image cap"
+                                />
+                                <CardBody>
+                                    <CardTitle>Spotify</CardTitle>
+                                    <CardSubtitle>Comercial</CardSubtitle>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </div>
+                </Col>
+                <Col xs="6">
+                    <div className="d-flex justify-content-center">
+                        <div className="text-center">
+                            <Card>
+                                <CardImg
+                                    top
+                                    width="100%"
+                                    src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+                                    alt="Card image cap"
+                                />
+                                <CardBody>
+                                    <CardTitle>Semana</CardTitle>
+                                    <CardSubtitle>Filminute</CardSubtitle>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </div>
+                </Col>
+               
+            </Row>
+            <Row>
+                <Col xs="6">
+                    <div className="d-flex justify-content-center pb-2">
+                        <div className="text-center">
+                            <Card>
+                                <CardImg
+                                style={{
+                                    objectFit:"cover"
+                                }}
+                                    top
+                                    width="100%"
+                                    src="https://picsum.photos/318/180"
+                                    alt="Card image cap"
+                                />
+                                <CardBody>
+                                    <CardTitle>Fox Sports</CardTitle>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </div>
+                </Col>
+                <Col xs="6">
+                    <div className="d-flex justify-content-center">
+                        <div className="text-center">
+                            <Card>
+                                <CardImg
+                                    top
+                                    width="100%"
+                                    src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+                                    alt="Card image cap"
+                                />
+                                <CardBody>
+                                    <CardTitle>Vanguardia</CardTitle>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </div>
+                </Col>
+               
+            </Row>
+            <Row>
+                <Col xs="6">
+                    <div className="d-flex justify-content-center pb-2">
+                        <div className="text-center">
+                            <Card>
+                                <CardImg
+                                style={{
+                                    objectFit:"cover"
+                                }}
+                                    top
+                                    width="100%"
+                                    src="https://picsum.photos/318/180"
+                                    alt="Card image cap"
+                                />
+                                <CardBody>
+                                    <CardTitle>Tech Crunch</CardTitle>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </div>
+                </Col>
+                <Col xs="6">
+                    <div className="d-flex justify-content-center">
+                        <div className="text-center">
+                            <Card>
+                                <CardImg
+                                    top
+                                    width="100%"
+                                    src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+                                    alt="Card image cap"
+                                />
+                                <CardBody>
+                                    <CardTitle>Pied Piper</CardTitle>
+                                    <CardSubtitle>Filminute</CardSubtitle>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </div>
+                </Col>
+               
+            </Row>
+         
+           
+        </div>
     );
 };
 //
@@ -346,7 +477,6 @@ const Clients = () => {
 //
 //
 
-
 class App extends Component {
     render() {
         return (
@@ -354,7 +484,7 @@ class App extends Component {
                 <Intro />
                 <Home />
                 <Knowus />
-                <Clients/>
+                <Clients />
                 <Footer />
             </Container>
         );
